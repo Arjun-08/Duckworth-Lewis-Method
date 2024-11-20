@@ -102,5 +102,5 @@ Where \( y' \) is the predicted score, and \( y \) is the actual score.
 - Python 3.x
 - Required libraries: `numpy`, `pandas`, `matplotlib`, `scipy`
 
-##Contact
+## Contact
 If you have any questions or suggestions, please feel free to reach out to me at nvarjunmani07@gmail.com.
