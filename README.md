@@ -38,9 +38,8 @@ Data cleaning ensures:
 ## **Model Overview**
 The Duckworth-Lewis run production model is defined as:
 
-\[
-Z(u, w) = Z_0(w) \cdot \left[1 - e^{-\frac{L(w) \cdot u}{Z_0(w)}}\right]
-\]
+![image](https://github.com/user-attachments/assets/234af6f5-a8da-45e7-ab7c-329424f8a4cc)
+
 
 Where:
 - \( Z(u, w) \): Predicted runs for \( u \) overs remaining and \( w \) wickets in hand.
@@ -63,9 +62,8 @@ Where:
 
 ### **Loss Function**
 - A custom loss function is used to optimize the model parameters:
-\[
-\text{loss}(y', y) = (y' + 1) \cdot \log\left(\frac{y' + 1}{y + 1}\right) - y' + y
-\]
+![image](https://github.com/user-attachments/assets/e857595a-8211-4a34-af6b-66c8fd4bc164)
+
 Where \( y' \) is the predicted score, and \( y \) is the actual score.
 
 ### **Parameter Optimization**
@@ -79,7 +77,6 @@ Where \( y' \) is the predicted score, and \( y \) is the actual score.
 ### **Visualization**
 - Plots are generated to visualize the preliminary and final run production functions for all wicket categories.
 
----
 
 ## **Results**
 ### **Preliminary Parameters**
@@ -93,16 +90,17 @@ Where \( y' \) is the predicted score, and \( y \) is the actual score.
 - Normalized loss: **6.19**
 
 ### **Plots**
-1. **Preliminary Run Production Functions** (Figure 1): Shows \( Z(u, w) \) based on preliminary \( Z_0(w) \) and \( L(w) \).
+1. **Preliminary Run Production Functions** (Figure 1): Shows \( Z(u, w) \) based on preliminary \( Z_0(w) \) and \( L(w) \). ![plot1_initial](https://github.com/user-attachments/assets/a32e0261-9afe-4f90-92dc-00d7483c4260)
+
+   
 2. **Final Run Production Functions** (Figure 2): Updated \( Z(u, w) \) using refined parameters.
+![plot2_final](https://github.com/user-attachments/assets/cca336e0-6b46-4b6b-b603-465fc0e62867)
 
----
 
-## **Usage**
-### **Dependencies**
+
+## **Dependencies**
 - Python 3.x
 - Required libraries: `numpy`, `pandas`, `matplotlib`, `scipy`
-
 
 ##Contact
 If you have any questions or suggestions, please feel free to reach out to me at nvarjunmani07@gmail.com.
